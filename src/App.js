@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import Customer from './components/Customer';
 
-const customers =[ {
+const customers =[ 
+  {
   'id' : 1,
   'image' : 'https://placeimg.com/64/64/1',
   'name' : '춘향이',
@@ -38,7 +39,8 @@ class App extends Component {
           customers.map( c => {
             return (
                 <Customer
-                  key = {c.id}
+                  key={c.id}
+                  id = {c.id}
                   image = {c.image}
                   name = {c.name}
                   birthday = {c.birthday}
